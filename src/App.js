@@ -1,23 +1,21 @@
 import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App cloud-bg">
+      <header className="landing-header">
+        <div className="logo">DSGNR®</div>
+        <div className="menu">Menu</div>
       </header>
+      <main className="landing-main">
+        <img src="/assets/box.png" alt="DSGNR Box" className="box-img" />
+        <h1 className="headline">
+          We don't chase trends. We carry designer DNA and birth icons. Where legends are raised, and history's written in Helvetica.
+        </h1>
+        <button className="coming-soon-btn">Coming Soon <span className="arrow">→</span></button>
+      </main>
     </div>
   );
 }

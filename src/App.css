@@ -36,3 +36,125 @@
     transform: rotate(360deg);
   }
 }
+
+.App-title {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.App-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #b0b8c1;
+  margin-top: 0;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.cloud-bg {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  background-color: #1f1f1f;
+  flex-direction: column;
+}
+
+.landing-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 3rem 0 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.menu {
+  font-size: 1rem;
+  color: #fff;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin-top: 0.3rem;
+}
+
+.landing-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.box-img {
+  width: 140px;
+  margin-bottom: 2.5rem;
+  margin-top: 4rem;
+}
+
+.headline {
+  max-width: 800px;
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  line-height: 1.2;
+}
+
+.coming-soon-btn {
+  background: #fff;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+  transition: background 0.2s, color 0.2s;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.coming-soon-btn:hover {
+  background: #fff;
+  opacity: 0.5;
+}
+.arrow {
+  font-size: 1.2em;
+  margin-left: 0.2em;
+}
+
+@media (max-width: 600px) {
+  .landing-header {
+    padding: 1.2rem 1.2rem 0 1.2rem;
+  }
+  .headline {
+    font-size: 1.2rem;
+    max-width: 95vw;
+  }
+  .box-img {
+    width: 90px;
+    margin-top: 2rem;
+  }
+  .coming-soon-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
